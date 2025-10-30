@@ -1,0 +1,294 @@
+html, body {
+  color: rgba(255, 255, 255, 0.87);
+  font-family: "MedievalSharp", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.87);
+  font-family: "MedievalSharp", cursive;
+  width: 100%;
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.imageBoss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.brand-glow {
+  font-size: 1.4rem;
+  font-weight: 600;
+    text-decoration: none;
+  color: #e8e8e8 !important;
+}
+
+.navbar-fantasy .nav-link {
+  color: #ccc !important;
+  font-weight: 500;
+  margin: 0 0.8rem;
+    text-decoration: none;
+
+}
+
+.navbar-fantasy .nav-link:hover {
+  color: #e41010 !important;
+  text-decoration: none;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 992px) {
+  .navbar-fantasy {
+    padding: 1rem;
+  }
+
+
+}
+.imageBoss img {
+  border: 3px solid #5c3a1b;
+  border-radius: 10px;
+  filter: sepia(0.3) contrast(1.1);
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+body {
+  padding-top: 150px !important;
+}
+
+.tableau {
+  border-radius: 15px !important;
+  text-decoration: none;
+  z-index: 9999;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 500px;
+}
+.manuscrit-bg {
+  padding: 30px;
+  padding-top: 10px;
+  min-width: 200px;
+  position: relative;
+  background-image: url("/images/fond/paper-1074131.jpg");
+  background-size: cover;
+border: 3px solid #070101;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #f8f5e6;
+  
+  border-radius: 15px;
+  overflow: hidden;
+  filter: brightness(80%) sepia(15%);
+}
+.imagehide {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999; /* assure-toi qu’aucun autre z-index n’est plus haut */
+}
+/* L’ombre qui assombrit légèrement */
+.manuscrit-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* ajuste 0.3 → 0.6 selon la luminosité */
+  z-index: 0;
+}
+
+/* Le contenu reste au-dessus */
+.manuscrit-bg > * {
+  position: relative;
+  z-index: 1;
+}
+.lereste{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 20px;
+  z-index: 999;
+  overflow: hidden;
+  
+}
+.lerest h1 {
+font-weight: bold;
+}
+.containerCardInfo {
+  display: flex;
+  justify-content: center;
+}
+.cardinfo h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.cardinfo{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 250px;
+
+}
+.Navbar {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    top: 0px;
+    position: fixed;
+    background-color: #222;
+    margin: 0 !important;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    justify-content: space-between;
+    padding-right: 100px;
+    align-items: center;
+    padding-left: 50px;
+}
+.navcontainer {
+  display: flex;
+  gap: 50px;
+}
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+.lereste li {
+  gap: 20px;
+  font-size: 20px;
+}
+.lereste ul {
+  display: flex;
+  flex-direction: column;
+gap: 20px;
+z-index: 2;
+}
+.imageBoss h2 {
+  font-size: 25px;
+}
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; 
+  z-index: -1000;     
+}
+
+.soundButton {
+    display: flex;
+
+  position: fixed;
+  top: 72px;
+  right: 0;
+  background-color: #070101;
+  z-index: 10000;
+}
+.searchstyle {
+  margin-right: 200px;
+}
+.imagehide {
+  position: absolute;
+padding-top: 60px;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  z-index: 10;
+  cursor: pointer;
+}
+.cardinfo {
+  position: relative;
+  overflow: hidden;
+  
+}
+.titreback {
+  padding: 10px;
+}
+.medieval-button {
+    padding: 10px 20px;
+    background-color: #795649; /* A dark wood-like brown */
+    color: #f4e5c3; /* A parchment-like off-white */
+    border: 2px solid #c0a080; /* A lighter brown border */
+    font-family: 'Goudy Bookletter 1911', serif; /* A font with an old-style feel */
+    font-size: 18px;
+    text-shadow: 1px 1px 0px #a67c52; /* Gives a bit of depth to the text */
+    box-shadow: 2px 2px 0px #a67c52; /* Simulates an inset look */
+    border-radius: 4px; /* Slightly rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .medieval-button:hover {
+    background-color: #8a6e2f; /* A lighter, worn wood color for hover */
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3); /* A more pronounced shadow for hover */
+  }
+  
+  .medieval-button:active {
+    box-shadow: inset 1px 1px 2px 0px rgba(0, 0, 0, 0.5); /* An inset shadow for a pressed effect */
+    transform: translateY(2px); /* Moves the button down to simulate a press */
+  }
+  .imagehide {
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+.imagehide.hidden {
+  opacity: 0;
+}
+.searchstyle {
+  background: radial-gradient(circle at center, #f5deb3 0%, #e0c097 100%);
+  border: 3px solid #6b3e26;
+    color: #3b2f2f;
+
+}
+  .searchstyle input::placeholder {
+  color: #7b5e40;
+  font-style: italic;
+}
+  
+
+.searchstyle input:focus {
+  border-color: #b8860b;
+  box-shadow: 0 0 10px #b8860b;
+  background: #fff3c4;
+}
