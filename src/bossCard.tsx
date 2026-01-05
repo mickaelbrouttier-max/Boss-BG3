@@ -7,9 +7,8 @@ export default function Bosse({ bosse }: { bosse: any }) {
   return (
     <div className="containerCardInfo">
       <article className="cardinfo manuscrit-bg">
-        {/* Image au-dessus du texte */}
         <img
-          src="/images/fond/Copy-of-4x3_Vertical_Logo_Placement_1_3b-1.jpg"
+          src="./images/fond/Copy-of-4x3_Vertical_Logo_Placement_1_3b-1.jpg"
           className={"imagehide " + (showPortrait ? "visible" : "hidden")}
           onClick={() => setShowPortrait(false)}
         />

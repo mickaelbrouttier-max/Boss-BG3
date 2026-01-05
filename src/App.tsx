@@ -65,9 +65,9 @@ function App() {
 
         <button className="soundButton" onClick={toggleSound}>
           {muted ? 
-            <img src="/images/fond/alphiras-song-is-insanely-beautiful-and-ive-missed-it-v0-i7b52yxkltqb1.webp" width={104} alt="Sound off"/> 
+            <img src="./images/fond/alphiras-song-is-insanely-beautiful-and-ive-missed-it-v0-i7b52yxkltqb1.webp" width={104} alt="Sound off"/> 
             : 
-            <img src="/images/fond/Baldurs-Gate-3-parler-avec-les-morts.jpg" width={104} alt="Sound on"/>
+            <img src="./images/fond/Baldurs-Gate-3-parler-avec-les-morts.jpg" width={104} alt="Sound on"/>
           }
         </button>
 
