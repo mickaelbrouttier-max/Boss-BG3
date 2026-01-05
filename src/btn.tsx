@@ -4,7 +4,6 @@ interface BoutonImageProps {
   imageUrl: string;
   lieux: string;
   stats: Record<string, number>;
-  value: string;
 }
 
 export default function BoutonImage({imageUrl, lieux, stats}: BoutonImageProps) {

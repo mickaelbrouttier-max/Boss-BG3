@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 
-export default function Bosse({ bosse }) {
+export default function Bosse({ bosse }: { bosse: any }) {
   const [showPortrait, setShowPortrait] = useState(true);
 
   return (
