@@ -9,15 +9,12 @@ function NavBarone() {
         <Navbar.Brand href="#home" className="brand-glow">
           Bouka
         </Navbar.Brand>
-        <Nav className="ms-auto">
-          <Nav.Link href="#home">Accueil</Nav.Link>
-          <Nav.Link href="#features">Les boss</Nav.Link>
-          <Nav.Link href="#pricing">Les Compagnons</Nav.Link>
-          
+        <Nav className="ms-auto">          
         </Nav>
       </Container>
     </Navbar>
   );
 }
+
 
 export default NavBarone;
